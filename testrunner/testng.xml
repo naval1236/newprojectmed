@@ -5,11 +5,36 @@
   <test name="medicalapp Test">
 	  <parameter name="browser" value="chrome"/>
     <classes>
-       <class name="com.medsol1.testcases.TC_Logintest_created"/> 
-     
+      <!-- <class name="com.medsol1.testcases.TC_Logintest_created"/> -->
+     <!--<class name="com.medsol1.testcases.TC_Beds_Management_Beds"/>-->
+      <!--<class name="com.medsol1.testcases.TC_Beds_Management_Beds_NewBulkBed"/>-->
+       <!--<class name="com.medsol1.testcases.TC_Documents"/>-->
      <!-- <class name="com.medsol1.testcases.TC_Admin_created"/>  -->
        <!-- <class name="com.medsol1.testcases.TC_Admin_modified"/>-->
      <!--<class name="com.medsol1.testcases.TC_Admin_delete"/> --> 
+     <!--<class name="com.medsol1.testcases.TC_Doctors"/>-->
+  <!-- <class name="com.medsol1.testcases.TC_Billings"/>-->
+  
+  
+    <!--   <class name="com.medsol1.testcases.TC_Billings_Created"/>  -->
+     <!--  <class name="com.medsol1.testcases.TC_Billings_Modify"/>-->
+     <!--  <class name="com.medsol1.testcases.TC_Billings_Delete"/>  -->
+     
+     
+          <!--<class name="com.medsol1.testcases.TC_Document_Created"/>  -->
+      <!-- <class name="com.medsol1.testcases.TC_Document_Modify"/>-->
+       <!--<class name="com.medsol1.testcases.TC_Document_Delete"/> -->
+       
+       
+      <!--   <class name="com.medsol1.testcases.TC_Beds_Management_Beds_NewBulkBed_Created"/>  -->
+       <!--  <class name="com.medsol1.testcases.TC_Beds_Management_Beds_NewBulkBed_Modify"/> -->
+      <!--   <class name="com.medsol1.testcases.TC_Beds_Management_Beds_NewBulkBed_Delete"/> -->
+       
+       
+       <class name="com.medsol1.testcases.TC_Beds_Management_Beds_Created"/>  
+       <class name="com.medsol1.testcases.TC_Beds_Management_Beds_Modify"/>
+       <class name="com.medsol1.testcases.TC_Beds_Management_Beds_Delete"/>
+       
     </classes>
   </test> 
 </suite> 

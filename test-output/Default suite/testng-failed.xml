@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.medsol1.testcases.TC_Logintest_created">
+      <class name="com.medsol1.testcases.TC_Beds_Management_Beds">
         <methods>
-          <include name="logintest"/>
+          <include name="edit_Beds_Management_Beds_test"/>
+          <include name="delete_Beds_Management_Beds_test"/>
           <include name="setup"/>
+          <include name="Beds_Management_Beds_test"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.medsol1.testcases.TC_Logintest_created -->
+      </class> <!-- com.medsol1.testcases.TC_Beds_Management_Beds -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

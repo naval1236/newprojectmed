@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-medsol1" class="navigator-link">
-              <span class="suite-name border-passed">medsol1</span>
+              <span class="suite-name border-skipped">medsol1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-medsol1" class="navigator-link ">
-                    <span>C:\Users\user\eclipse-workspace\medol1\testrunner\testng.xml</span>
+                    <span>C:\Users\admin\git\medsol0\testrunner\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,  1 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-medsol1" class="hide-methods skipped suite-medsol1"> (hide)</a> <!-- hide-methods skipped suite-medsol1 -->
+                      <a href="#" panel-name="suite-medsol1" class="show-methods skipped suite-medsol1"> (show)</a> <!-- show-methods skipped suite-medsol1 -->
+                    </span>
+                    <div class="method-list-content skipped suite-medsol1">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-medsol1" title="com.medsol1.testcases.TC_Beds_Management_Beds_Delete" class="method navigator-link" hash-for-method="Beds_Management_Beds_test">Beds_Management_Beds_test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-medsol1 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +117,12 @@
                     <div class="method-list-content passed suite-medsol1">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-medsol1" title="com.medsol1.testcases.TC_Logintest_created" class="method navigator-link" hash-for-method="logintest">logintest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-medsol1" title="com.medsol1.testcases.TC_Beds_Management_Beds_Created" class="method navigator-link" hash-for-method="Beds_Management_Beds_test">Beds_Management_Beds_test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-medsol1" title="com.medsol1.testcases.TC_Beds_Management_Beds_Modify" class="method navigator-link" hash-for-method="Beds_Management_Beds_test">Beds_Management_Beds_test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-medsol1 -->
@@ -118,17 +137,76 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-medsol1" class="panel medsol1">
-          <div class="suite-medsol1-class-passed">
+          <div class="suite-medsol1-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.medsol1.testcases.TC_Logintest_created</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.medsol1.testcases.TC_Beds_Management_Beds_Delete</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="logintest">
-                  </a> <!-- logintest -->
-                  <span class="method-name">logintest</span>
+                  <a name="Beds_Management_Beds_test">
+                  </a> <!-- Beds_Management_Beds_test -->
+                  <span class="method-name">Beds_Management_Beds_test</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ce3761a7c9e70e7abfadf4d364ba0db3, get {url=http://cls-medsol.in}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50573}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50573/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce3761a7c9e70e7abfadf4d364ba0db3
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+	at com.medsol1.testcases.Baseclass.setup(Baseclass.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+	... 38 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-medsol1-class-skipped -->
+          <div class="suite-medsol1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.medsol1.testcases.TC_Beds_Management_Beds_Created</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Beds_Management_Beds_test">
+                  </a> <!-- Beds_Management_Beds_test -->
+                  <span class="method-name">Beds_Management_Beds_test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-medsol1-class-passed -->
+          <div class="suite-medsol1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.medsol1.testcases.TC_Beds_Management_Beds_Modify</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Beds_Management_Beds_test">
+                  </a> <!-- Beds_Management_Beds_test -->
+                  <span class="method-name">Beds_Management_Beds_test</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +214,7 @@
         </div> <!-- panel medsol1 -->
         <div panel-name="test-xml-medsol1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\user\eclipse-workspace\medol1\testrunner\testng.xml</span>
+            <span class="header-content">C:\Users\admin\git\medsol0\testrunner\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,7 +224,9 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;medicalapp Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.medsol1.testcases.TC_Logintest_created&quot;/&gt;
+      &lt;class name=&quot;com.medsol1.testcases.TC_Beds_Management_Beds_Created&quot;/&gt;
+      &lt;class name=&quot;com.medsol1.testcases.TC_Beds_Management_Beds_Modify&quot;/&gt;
+      &lt;class name=&quot;com.medsol1.testcases.TC_Beds_Management_Beds_Delete&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- medicalapp Test --&gt;
 &lt;/suite&gt; &lt;!-- medsol1 --&gt;
@@ -160,7 +240,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">medicalapp Test (1 class)</span>
+                <span class="test-name">medicalapp Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,16 +266,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'logintest')
-data.setCell(0, 2, 'com.medsol1.testcases.TC_Logintest_created')
-data.setCell(0, 3, 16008);
+data.setCell(0, 1, 'Beds_Management_Beds_test')
+data.setCell(0, 2, 'com.medsol1.testcases.TC_Beds_Management_Beds_Created')
+data.setCell(0, 3, 54406);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Beds_Management_Beds_test')
+data.setCell(1, 2, 'com.medsol1.testcases.TC_Beds_Management_Beds_Modify')
+data.setCell(1, 3, 28901);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Beds_Management_Beds_test')
+data.setCell(2, 2, 'com.medsol1.testcases.TC_Beds_Management_Beds_Delete')
+data.setCell(2, 3, 0);
 window.suiteTableData['medsol1']= { tableData: data, tableDiv: 'times-div-medsol1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-medsol1">
               </div> <!-- times-div-medsol1 -->
             </div> <!-- times-div -->
@@ -221,18 +309,50 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.medsol1.testcases.TC_Logintest_created</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.medsol1.testcases.TC_Beds_Management_Beds_Created</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">logintest</span>
-                <span class="method-start">18468 ms</span>
+                <span class="method-name">Beds_Management_Beds_test</span>
+                <span class="method-start">29490 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">34482 ms</span>
+                <span class="method-start">83940 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.medsol1.testcases.TC_Beds_Management_Beds_Modify</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">86730 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Beds_Management_Beds_test</span>
+                <span class="method-start">112154 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">141075 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.medsol1.testcases.TC_Beds_Management_Beds_Delete</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">142197 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Beds_Management_Beds_test</span>
+                <span class="method-start">327235 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">327277 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

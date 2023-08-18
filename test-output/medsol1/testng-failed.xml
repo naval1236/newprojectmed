@@ -4,13 +4,13 @@
   <test thread-count="5" name="medicalapp Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.medsol1.testcases.TC_Admin_created">
+      <class name="com.medsol1.testcases.TC_Beds_Management_Beds_Delete">
         <methods>
-          <include name="Admintest"/>
+          <include name="Beds_Management_Beds_test"/>
           <include name="setup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.medsol1.testcases.TC_Admin_created -->
+      </class> <!-- com.medsol1.testcases.TC_Beds_Management_Beds_Delete -->
     </classes>
   </test> <!-- medicalapp Test(failed) -->
 </suite> <!-- Failed suite [medsol1] -->
